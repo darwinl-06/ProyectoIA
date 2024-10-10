@@ -7,15 +7,15 @@ import numpy as np
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
 
-# Etiqueta de la acción (cambiar según el video)
-action_label = "girando"
+# Etiqueta de la acció que cambia segun el video
+action_label = "sentandose"
 
 # Ruta del video
-video_path = './Desktop/ProyectoIA/Entrega1/Videos/Girando.mp4'
+video_path = './Desktop/ProyectoIA/Entrega1/Videos/Sentado_User4.mp4'
 cap = cv2.VideoCapture(video_path)
 
-# Abrimos un csv para guardar los datos de las coordenadas de las articulaciones
-with open('./Desktop/ProyectoIA/Entrega1/Dataset_Info/dataset_pose_girando.csv', mode='w', newline='') as file:
+# Abrimos un csv para guardar los datos de las coordenadas de las articulaciones (El nombre del archivo cambia segun el video)
+with open('./Desktop/ProyectoIA/Entrega1/Dataset_Info/dataset_sentado_user4.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     
     # Escribimos el encabezado del csv
