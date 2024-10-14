@@ -8,14 +8,14 @@ mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
 
 # Etiqueta de la acción (puedes cambiarla dependiendo del video que proceses)
-action_label = "Sentarse"
+action_label = "Levantarse"
 
 # Ruta del video (puedes cambiarla según el video que proceses)
-video_path = './Desktop/ProyectoIA/Entrega1/Videos/Sentado_User4.mp4'
+video_path = 'D:/SEMESTRE 7/IA/ProyectoIA/Entrega1/Videos/Levantarse_User1.mp4'
 cap = cv2.VideoCapture(video_path)
 
 # Abrimos un archivo CSV para guardar los datos del dataset
-with open('./Desktop/ProyectoIA/Entrega1/Dataset_Info/dataset_sentarse_user4.csv', mode='w', newline='') as file:
+with open('D:/SEMESTRE 7/IA/ProyectoIA/Entrega1/Dataset_Info/dataset_levantarse_user1.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     
     # Escribimos el encabezado del CSV
