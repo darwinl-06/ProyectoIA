@@ -1,10 +1,14 @@
 {
-    "build":{
-      "command":"pip install -r requirements.txt"
+    "build": {
+        "builder": "NIXPACKS",
+        "buildCommand": "pip install -r requirements.txt"
     },
-    "start":{
-      "command":"python app.py",
-      "type": "default"
+    "run": {
+        "command": "gunicorn app:app",
+        "port": "5000"
+    },
+    "env": {
+        "PYTHON_VERSION": "3.9.16",
+        "FLASK_ENV": "production"
     }
 }
-  
