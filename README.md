@@ -38,7 +38,7 @@ El sistema utiliza **MediaPipe** para detectar landmarks del cuerpo y un modelo 
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/darwinl-06/ProyectoIA.git
-   cd ProyectoIA/Entrega3
+   cd ProyectoIA
    ```
 
 2. Instalar las dependencias requeridas:
@@ -56,8 +56,6 @@ El sistema utiliza **MediaPipe** para detectar landmarks del cuerpo y un modelo 
 3. La ventana mostrará el video en tiempo real con:
    - Los landmarks corporales detectados.
    - La actividad humana clasificada en la parte superior izquierda del video.
-
-4. Para salir del programa, presiona la tecla `q`.
 
 ## Explicación del proyecto
 
